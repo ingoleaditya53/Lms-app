@@ -1,0 +1,52 @@
+/* General body styles */
+html, body {
+  height: 100%; /* Ensure the full height */
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  overflow-y: auto; /* Allow vertical scrolling */
+  font-family: Arial, sans-serif;
+  background-image: url('/public/Images/kelly-sikkema-JpiaxBSuWK0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+/* Main content container */
+.main-content {
+  padding-top: 70px; /* Adjust content position below the fixed navbar */
+  padding: 20px;
+  min-height: 100vh; /* Ensure content area can grow */
+  overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+}
+
+/* Container for specific content sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Route container with background */
+.route-container {
+  padding: 20px;
+  border: 2px solid #ffffff; /* Border color for the content area */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 768px) {
+  .route-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .route-container {
+    padding: 10px;
+  }
+}

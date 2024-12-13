@@ -1,0 +1,140 @@
+/* Container for the Course Management page */
+.course-management-container {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Content takes up 100% width */
+    margin: 100px auto 30px auto; /* Margin from top for 100px spacing */
+    color: black; /* Set content text to black */
+}
+
+/* Heading Style */
+h2 {
+    color: black; /* Black text for heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form section to add/update courses */
+.course-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Input for course title */
+.course-input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+    transition: border 0.3s;
+    color: black; /* Black text inside input field */
+}
+
+/* Focused input */
+.course-input:focus {
+    border-color: #007bff;  
+    outline: none;
+}
+
+/* Button styles */
+.btn {
+    width: 100px; /* Set fixed width for button */
+    padding: 12px 20px;
+    border: none;
+    background-color: black; /* Black button */
+    color: white; /* White text inside button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    text-align: center; /* Center text inside button */
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/* List of courses */
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual course item */
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: black; /* Black text for course items */
+    background-color: whitesmoke;
+}
+
+/* Course title styling */
+.course-title {
+    font-size: 18px;
+    color: black; /* Black text for course titles */
+    flex-grow: 1;
+}
+
+/* Edit button */
+.edit-btn, .delete-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Edit button color */
+.edit-btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.edit-btn:hover {
+    background-color: black;
+}
+
+/* Delete button color */
+.delete-btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: black;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .course-input {
+        width: 80%; /* Adjust input width for smaller screens */
+    }
+
+    .btn {
+        padding: 10px 15px; 
+        font-size: 14px; 
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-input {
+        width: 90%; /* Adjust input width for very small screens */
+    }
+
+    .btn {
+        padding: 8px 12px; 
+        font-size: 12px; /* Smaller font size */
+        width: 100px; /* Keep button width at 100px */
+    }
+}
